@@ -8,7 +8,16 @@ public class Carro {
 
     String cor, tipo, placa;
     int numPortas;
-
+    
+    public Carro(){
+        System.out.println("Oi");
+    }
+    public Carro(String cor, String tipo, String placa, int numPortas){
+        this.cor = cor;
+        this.tipo = tipo;
+        this.placa = placa;
+        this.numPortas = numPortas;
+    }
     void imprimirCarro() {
         System.out.println("Cor do carro: " + cor);
         System.out.println("Número de portas do carro: " + numPortas);
