@@ -9,6 +9,13 @@ public class Pessoa {
     String nome, sobrenome;
     int idade;
     double peso;
+    
+    void imprimirPessoa(){
+        System.out.println("Nome da pessoa: " + nome);
+        System.out.println("Sobrenome da pessoa: " + sobrenome);
+        System.out.println("Idade da pessoa: " + idade);
+        System.out.println("Peso da pessoa: " +peso);
+    }
 
     public String getNome() {
         return nome;

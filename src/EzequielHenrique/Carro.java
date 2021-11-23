@@ -9,6 +9,13 @@ public class Carro {
     String cor, tipo, placa;
     int numPortas;
 
+    void imprimirCarro() {
+        System.out.println("Cor do carro: " + cor);
+        System.out.println("Número de portas do carro: " + numPortas);
+        System.out.println("Placa do carro: " + placa);
+        System.out.println("Modelo do carro: " + tipo);
+    }
+
     public String getCor() {
         return cor;
     }
@@ -41,5 +48,4 @@ public class Carro {
         this.numPortas = numPortas;
     }
 
-    
 }
