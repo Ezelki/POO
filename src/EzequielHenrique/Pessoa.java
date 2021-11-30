@@ -7,8 +7,8 @@ package EzequielHenrique;
 public class Pessoa {
 
     private String nome, sobrenome;
-    int idade;
-    double peso;
+    private int idade;
+    private double peso;
     Carro carro;
 
     void impP() {
@@ -18,23 +18,23 @@ public class Pessoa {
         System.out.println("Peso da pessoa: " + peso);
     }
     
-    void ligarCarro(){
+    protected void ligarCarro(){
         carro.Ligar();
     }
     
-    void desligarCarro(){
+    protected void desligarCarro(){
         carro.Desligar();
     }
     
-    void acelerarCarro(){
+    protected void acelerarCarro(){
         carro.Acelerar();
     }
     
-    void frearCarro(){
+    protected void frearCarro(){
         carro.Frear();
     }
     
-    void setCambioMarcha(int marcha){
+    protected void setCambioMarcha(int marcha){
         carro.setCambio(marcha);
     }
     

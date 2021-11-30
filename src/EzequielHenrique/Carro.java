@@ -6,8 +6,8 @@ package EzequielHenrique;
  */
 public class Carro {
 
-    String cor, tipo, placa;
-    int numPortas, cambio;
+    private String cor, tipo, placa;
+    private int numPortas, cambio;
     Pessoa dono;
 
     void impC() {
