@@ -6,17 +6,46 @@ package EzequielHenrique;
  */
 public class Pessoa {
 
-    String nome, sobrenome;
+    private String nome, sobrenome;
     int idade;
     double peso;
-    
-    void imprimirPessoa(){
+    Carro carro;
+
+    void impP() {
         System.out.println("Nome da pessoa: " + nome);
         System.out.println("Sobrenome da pessoa: " + sobrenome);
         System.out.println("Idade da pessoa: " + idade);
-        System.out.println("Peso da pessoa: " +peso);
+        System.out.println("Peso da pessoa: " + peso);
+    }
+    
+    void ligarCarro(){
+        carro.Ligar();
+    }
+    
+    void desligarCarro(){
+        carro.Desligar();
+    }
+    
+    void acelerarCarro(){
+        carro.Acelerar();
+    }
+    
+    void frearCarro(){
+        carro.Frear();
+    }
+    
+    void setCambioMarcha(int marcha){
+        carro.setCambio(marcha);
+    }
+    
+    public Carro getCarro() {
+        return carro;
     }
 
+    public void setCarro(Carro carro) {
+        this.carro = carro;
+    }
+    
     public String getNome() {
         return nome;
     }

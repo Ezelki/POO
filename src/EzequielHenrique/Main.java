@@ -1,5 +1,8 @@
 package EzequielHenrique;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *
  * @author Ezequiel Henrique
@@ -7,23 +10,33 @@ package EzequielHenrique;
 public class Main {
 
     public static void main(String[] args) {
-        Carro carro = new Carro("Azul","Fusca","AAA-2252",2);
-        carro.imprimirCarro();
 
-        Carro carro2 = new Carro();
-        carro2.setCor("Azul");
-        carro2.setNumPortas(2);
-        carro2.setPlaca("AAA-0000");
-        carro2.setTipo("Chevette");
-        carro2.imprimirCarro();
+        Carro carro = new Carro();
+        carro.setCor("Azul");
+        carro.setNumPortas(2);
+        carro.setPlaca("AAA-0001");
+        carro.setTipo("Chevette");
         
-        //Pessoa pessoa = new Pessoa();
-        //pessoa.setNome("Gustavo");
-        //pessoa.setSobrenome("Lima");
-        //pessoa.setIdade(32);
-        //pessoa.setPeso(69.23);
+        carro.impC();
 
-        //pessoa.imprimirPessoa();
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Jorge");
+        pessoa.setSobrenome("Augusto");
+        pessoa.setIdade(32);
+        pessoa.setPeso(69.23);
+        carro.setPessoa(dono);
+        pessoa.impP();
+        
+        pessoa.setCarro(carro);
+        pessoa.ligarCarro();
+        pessoa.setCambioMarcha(1);
+        pessoa.acelerarCarro();
+        pessoa.setCambioMarcha(2);
+        pessoa.acelerarCarro();
+        pessoa.setCambioMarcha(3);
+        pessoa.frearCarro();
+        pessoa.getCarro().getCambio();
+        
         
         
     }
